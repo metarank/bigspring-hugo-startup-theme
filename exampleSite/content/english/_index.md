@@ -30,16 +30,11 @@ feature:
 service:
   enable: true
   service_item:
-  - title: It is the most advanced digital marketing and it company.
-    images:
-    - images/service-1.png
-    - images/service-2.png
-    - images/service-3.png
-    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique
-      eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet
-      sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet,
-      tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel
-      consquat.
+  - title: It is built to make your life simpler
+    images: []
+    content: Metarank is built to solve common pain points that arise when a company
+      wants to implement it's own personalization engine. Metarank unifies the common
+      actions that you need to perform
     button:
       enable: true
       label: Check it out
@@ -96,3 +91,8 @@ call_to_action:
     link: contact
 
 ---
+* Collecting feedback data (clickthrough data like clicks in item lists, add to carts or other actions performed by a user)
+* Storing this data in a way both suitable for ML model training and online inference
+* Backtesting the whole clickthrough history to perform offline model evaluation
+* Online/offline feature recomputation
+* Online low-latency model inference
