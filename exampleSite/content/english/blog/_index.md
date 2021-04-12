@@ -1,7 +1,8 @@
 ---
 title: Metarank in a nutshell
-subtitle: ''
-description: Read the latest news about development of Metarank open source personalization
+subtitle: Read the latest news about development of the Metarank open source personalization
+  library. We will share not only WHYs but also HOWs.
+description: Read the latest news about development of the Metarank open source personalization
   library
 
 ---
