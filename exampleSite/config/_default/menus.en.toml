@@ -1,8 +1,8 @@
 footer_left = []
 footer_middle = []
 [[footer_right]]
-name = "Metarank Github"
-url = "https://github.com/metarank/metarank"
+name = "Blog"
+url = "blog"
 [[main]]
 name = "Home"
 url = "/"
