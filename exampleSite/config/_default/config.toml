@@ -1,10 +1,7 @@
-######################## default configuration ####################
-baseURL = "http://examplesite.org/"
-title = "Bigspring Hugo"
-theme = "bigspring"
-# post pagination
+baseURL = "https://metarank.netlify.app"
+disqusShortname = ""
+googleAnalytics = ""
 paginate = "3"
-# post excerpt
 summaryLength = "15"
 # default language
 defaultContentLanguage = "en"
@@ -15,5 +12,7 @@ disqusShortname = "" # get your shortname form here : https://disqus.com
 # google analytics
 googleAnalytics = "" # example : UA-123-45
 # unsafe html
+theme = "bigspring"
+title = "Metarank"
 [markup.goldmark.renderer]
 unsafe = true
