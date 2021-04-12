@@ -91,8 +91,3 @@ call_to_action:
     link: contact
 
 ---
-* Collecting feedback data (clickthrough data like clicks in item lists, add to carts or other actions performed by a user)
-* Storing this data in a way both suitable for ML model training and online inference
-* Backtesting the whole clickthrough history to perform offline model evaluation
-* Online/offline feature recomputation
-* Online low-latency model inference
