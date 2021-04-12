@@ -6,6 +6,10 @@ theme = "bigspring"
 paginate = "3"
 # post excerpt
 summaryLength = "15"
+# default language
+defaultContentLanguage = "en"
+# disable language
+disableLanguages = ["de"]
 # disqus short name
 disqusShortname = "" # get your shortname form here : https://disqus.com
 # google analytics
