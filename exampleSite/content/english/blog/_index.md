@@ -1,7 +1,7 @@
 ---
-title: "Latest News"
-subtitle: ""
-# meta description
-description: "This is meta description"
-draft: false
+title: Metarank in a nutshell
+subtitle: ''
+description: Read latest news about development of metarank open source personalization
+  library
+
 ---
