@@ -3,6 +3,15 @@ disqusShortname = ""
 googleAnalytics = ""
 paginate = "3"
 summaryLength = "15"
+# default language
+defaultContentLanguage = "en"
+# disable language
+disableLanguages = ["de"]
+# disqus short name
+disqusShortname = "" # get your shortname form here : https://disqus.com
+# google analytics
+googleAnalytics = "" # example : UA-123-45
+# unsafe html
 theme = "bigspring"
 title = "Metarank"
 [markup.goldmark.renderer]
