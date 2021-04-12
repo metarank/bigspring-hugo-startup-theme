@@ -27,9 +27,6 @@ feature:
     icon: fas fa-tachometer-alt
     content: Storage configuration, data ingestion and simple API are built to make
       development easy
-  - name: Cloud Support
-    icon: fas fa-cloud
-    content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
 service:
   enable: true
   service_item:
