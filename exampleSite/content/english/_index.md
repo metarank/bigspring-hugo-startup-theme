@@ -11,7 +11,7 @@ banner:
     link: https://github.com/metarank/metarank
 feature:
   enable: true
-  title: Something You Need To Know
+  title: Metarank is here to help you grow
   feature_item:
   - name: Open Source
     icon: fas fa-code
