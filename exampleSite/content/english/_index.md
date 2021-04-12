@@ -23,9 +23,10 @@ feature:
     icon: fas fa-heart
     content: Support of different ranking algorithms and libraries. Planned ones are
       XGBoost, LightGBM, Catboost and RankLib.
-  - name: Faster Response
+  - name: Easy to test and deploy
     icon: fas fa-tachometer-alt
-    content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
+    content: Storage configuration, data ingestion and simple API are built to make
+      development easy
   - name: Cloud Support
     icon: fas fa-cloud
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
