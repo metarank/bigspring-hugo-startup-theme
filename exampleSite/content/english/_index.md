@@ -11,26 +11,22 @@ banner:
     link: https://github.com/metarank/metarank
 feature:
   enable: true
-  title: Something You Need To Know
+  title: Metarank is here to help you grow
   feature_item:
-  - name: Clean Code
+  - name: Open Source
     icon: fas fa-code
-    content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
-  - name: Object Oriented
+    content: Metarank is an Open Source library developed under Apache License 2.0
+  - name: Simple API
     icon: fas fa-object-group
-    content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
-  - name: 24h Service
-    icon: fas fa-user-clock
-    content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
-  - name: Value For Money
+    content: Simple API to perform secondary item reranking
+  - name: Wide ranking algorithms support
     icon: fas fa-heart
-    content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
-  - name: Faster Response
+    content: Support of different ranking algorithms and libraries. Planned ones are
+      XGBoost, LightGBM, Catboost and RankLib.
+  - name: Easy to test and deploy
     icon: fas fa-tachometer-alt
-    content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
-  - name: Cloud Support
-    icon: fas fa-cloud
-    content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
+    content: Storage configuration, data ingestion and simple API are built to make
+      development easy
 service:
   enable: true
   service_item:
