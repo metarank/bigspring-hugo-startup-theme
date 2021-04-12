@@ -16,9 +16,9 @@ feature:
   - name: Open Source
     icon: fas fa-code
     content: Metarank is an Open Source library developed under Apache License 2.0
-  - name: Object Oriented
+  - name: Simple API
     icon: fas fa-object-group
-    content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
+    content: Simple API to perform secondary item reranking
   - name: 24h Service
     icon: fas fa-user-clock
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
