@@ -1,7 +1,7 @@
 ---
 banner:
   title: A toolbox for building personalized ranking systems
-  image: images/banner-art.svg
+  image: ''
   content: Metarank is a toolbox for building personalized ranking systems. It can
     be used to re-rank items in search results, recommendations and autocomplete suggestions
     by automating common data processing tasks in Learn-To-Rank applications.
