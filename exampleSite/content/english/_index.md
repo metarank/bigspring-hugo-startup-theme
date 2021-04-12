@@ -2,9 +2,9 @@
 banner:
   title: A toolbox for building personalized ranking systems
   image: images/banner-art.svg
-  content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim
-    maxime corporis cumque <br> totam aliquid nam sint inventore optio modi neque
-    laborum officiis necessitatibus
+  content: Metarank is a toolbox for building personalized ranking systems. It can
+    be used to re-rank items in search results, recommendations and autocomplete suggestions
+    by automating common data processing tasks in Learn-To-Rank applications.
   button:
     enable: true
     label: We are Open Source!
