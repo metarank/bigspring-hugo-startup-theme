@@ -1,6 +1,9 @@
 footer_left = []
 footer_middle = []
 [[footer_right]]
+name = "About Us"
+url = "about"
+[[footer_right]]
 name = "Blog"
 url = "blog"
 [[main]]
