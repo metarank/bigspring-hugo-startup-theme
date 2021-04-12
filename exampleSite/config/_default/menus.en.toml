@@ -1,21 +1,13 @@
-footer_right = []
-[[footer_left]]
-name = "About Us"
-url = "#"
-[[footer_middle]]
-name = "Pricing"
-url = "pricing"
-[[footer_middle]]
-name = "Platform"
-url = "#"
-[[footer_middle]]
-name = "Features"
-url = "#"
-[[main]]
-name = "About Us"
-url = "about"
-weight = ""
+footer_left = []
+footer_middle = []
+[[footer_right]]
+name = "Metarank Github"
+url = "https://github.com/metarank/metarank"
 [[main]]
 name = "Home"
 url = "/"
 weight = 1
+[[main]]
+name = "About Us"
+url = "about"
+weight = ""
