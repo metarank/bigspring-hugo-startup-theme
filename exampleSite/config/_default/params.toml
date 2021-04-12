@@ -1,41 +1,16 @@
-#################### default parameters ################################
+author = "Themefisher"
+contact_form_action = "#"
+description = "Metarank is a toolbox for building personalized ranking systems. It can be used to re-rank items in search results, recommendations and autocomplete suggestions by automating common data processing tasks in Learn-To-Rank applications."
 logo = "images/logo.png"
 logo_width = "200px"
-# Meta data
-description = "This is meta description"
-author = "Themefisher"
-# contact form action
-contact_form_action = "#" # contact form works with https://formspree.io
-
-# Preloader
-[preloader]
-enable = false
-preloader = "" # use jpg, png, svg or gif format.
-
-# Navigation buttons
 [navigation_button]
 enable = true
 label = "Get Started"
 link = "contact"
-
-  
-############################# social site ########################
+[preloader]
+enable = false
+preloader = ""
 [[social]]
-title = "facebook"
-icon = "fab fa-facebook" # themify icon : https://themify.me/themify-icons
-link = "#"
-
-[[social]]
-title = "twitter"
-icon = "fab fa-twitter" # themify icon : https://themify.me/themify-icons
-link = "#"
-
-[[social]]
-title = "skype"
-icon = "fab fa-skype" # themify icon : https://themify.me/themify-icons
-link = "#"
-
-[[social]]
-title = "linkedin"
-icon = "fab fa-linkedin" # themify icon : https://themify.me/themify-icons
-link = "#"
+icon = "fab fa-github"
+link = "https://github.com/metarank/metarank"
+title = "github"
