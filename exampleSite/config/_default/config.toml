@@ -1,6 +1,4 @@
 baseURL = "https://metarank.netlify.app"
-disqusShortname = ""
-googleAnalytics = ""
 paginate = "3"
 summaryLength = "15"
 # default language
