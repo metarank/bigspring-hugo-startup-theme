@@ -19,12 +19,10 @@ feature:
   - name: Simple API
     icon: fas fa-object-group
     content: Simple API to perform secondary item reranking
-  - name: 24h Service
-    icon: fas fa-user-clock
-    content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
-  - name: Value For Money
+  - name: Wide ranking algorithms support
     icon: fas fa-heart
-    content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
+    content: Support of different ranking algorithms and libraries. Planned ones are
+      XGBoost, LightGBM, Catboost and RankLib.
   - name: Faster Response
     icon: fas fa-tachometer-alt
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
