@@ -30,15 +30,6 @@ feature:
 service:
   enable: true
   service_item:
-  - title: It is built to make your life simpler
-    images: []
-    content: Metarank is built to solve common pain points that arise when a company
-      wants to implement it's own personalization engine. Metarank unifies the common
-      actions that you need to perform
-    button:
-      enable: false
-      label: Check it out
-      link: "#"
   - title: It is a privately owned Information and cyber security company
     images: []
     content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique
@@ -46,6 +37,15 @@ service:
       sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet,
       tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel
       consquat.
+    button:
+      enable: false
+      label: Check it out
+      link: "#"
+  - title: It is built to make your life simpler
+    images: []
+    content: Metarank is built to solve common pain points that arise when a company
+      wants to implement it's own personalization engine. Metarank unifies the common
+      actions that you need to perform
     button:
       enable: false
       label: Check it out
