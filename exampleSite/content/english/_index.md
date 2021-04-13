@@ -11,22 +11,21 @@ banner:
     link: https://github.com/metarank/metarank
 feature:
   enable: true
-  title: Metarank is here to help you grow
+  title: Principles
   feature_item:
-  - name: Open Source
+  - name: Open
     icon: fas fa-code
     content: Metarank is an Open Source library developed under Apache License 2.0
-  - name: Simple API
+  - name: Simple
     icon: fas fa-object-group
     content: Simple API to perform secondary item reranking
-  - name: Wide ranking algorithms support
+  - name: Out of the Box
     icon: fas fa-heart
-    content: Support of different ranking algorithms and libraries. Planned ones are
-      XGBoost, LightGBM, Catboost and RankLib.
-  - name: Easy to test and deploy
+    content: Support of different ranking algorithms and libraries
+  - name: Easy
     icon: fas fa-tachometer-alt
-    content: Storage configuration, data ingestion and simple API are built to make
-      development easy
+    content: Storage configuration, data ingestion and API are built to make development
+      easy
 service:
   enable: true
   service_item:
