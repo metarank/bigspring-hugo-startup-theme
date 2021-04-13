@@ -24,7 +24,8 @@ feature:
     content: Support of different ranking algorithms and libraries
   - name: Out of the Box
     icon: fas fa-box
-    content: Storage configuration, data ingestion and API
+    content: Storage configuration, data ingestion and API work out of the box with
+      minimal configuration
   - name: Zero Coding
     content: A set of basic feature value extractors, so you can build a trivial LTR
       model without any coding
