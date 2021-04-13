@@ -1,6 +1,6 @@
 author = "Themefisher"
 contact_form_action = "#"
-description = "Metarank is a toolbox for building personalized ranking systems. It can be used to re-rank items in search results, recommendations and autocomplete suggestions by automating common data processing tasks in Learn-To-Rank applications.\\"
+description = "Metarank is a toolbox for building personalized ranking systems. It can be used to re-rank items in search results, recommendations and autocomplete suggestions by automating common data processing tasks in Learn-To-Rank applications."
 logo = "images/logo.png"
 logo_width = "200px"
 [navigation_button]
