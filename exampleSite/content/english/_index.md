@@ -19,13 +19,20 @@ feature:
   - name: Simple
     icon: fas fa-object-group
     content: Simple API to perform secondary item reranking
-  - name: Out of the Box
-    icon: fas fa-heart
+  - name: Connected
+    icon: fas fa-plug
     content: Support of different ranking algorithms and libraries
-  - name: Easy
-    icon: fas fa-tachometer-alt
-    content: Storage configuration, data ingestion and API are built to make development
-      easy
+  - name: Out of the Box
+    icon: fas fa-box
+    content: Storage configuration, data ingestion and API
+  - name: Zero Coding
+    content: A set of basic feature value extractors, so you can build a trivial LTR
+      model without any coding
+    icon: fab fa-creative-commons-zero
+  - name: Extensible
+    content: Every element of the system can be extended or replaced with your own
+      implementation
+    icon: fas fa-link
 service:
   enable: true
   service_item:
