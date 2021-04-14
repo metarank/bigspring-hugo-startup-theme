@@ -1,172 +1,55 @@
 ---
-title: "screens with built in Present and Dismiss animations."
-date: 2020-04-18T10:07:21+06:00
-# post image
-image: "images/blog/post-3.jpg"
-# post type (regular/featured)
-type: "regular"
-# meta description
-description: "This is meta description"
-# post draft
-draft: false
+title: What is Metarank and why we decided to build it
+date: 2020-04-14T21:00:21+00:00
+image: "/images/metarank.png"
+type: regular
+description: Metarank is a toolbox for building personalized ranking systems
+
 ---
 
+## What is Metarank?
 
-#### Heading example
+Metarank (simplifed from Metadata Ranker) is a toolbox for building personalized ranking systems. It can be used to re-rank items in search results, recommendations and autocomplete suggestions by automating common data processing tasks in Learn-To-Rank applications. 
 
-Here is example of hedings. You can use this heading by following markdownify rules. For example: use `#` for heading 1 and use `######` for heading 6.
+Currently, when a company is interested in ranking items (especially in ecommerce category/collection pages, search results, autocomplete suggestions or recommendations), it has to solve the same problems again and again:
 
-# Heading 1 
-<br>
+* Collecting feedback data (clickthrough data like clicks in item lists, add to carts or other actions performed by a user)
+* Storing this data in a way both suitable for ML model training and online inference
+* Backtesting the whole clickthrough history to perform offline model evaluation
+* Online/offline feature re-computation
+* Online low-latency model inference
 
-## Heading 2 
+All of these steps are not new and there is a lot of literature and common knowledge about solving these tasks separately. However, glueing a single integrated solution from these parts is not an easy task, usually requiring hiring a team of developers, data scientists and infrastructure engineers to build this system from scratch.
 
-<br>
+Companies that have such systems already have the building blocks, but they are internal and not available for general public, so when a new company wants to build the same system it has to go over the same problems again and again.
 
-### Heading 3 
+## Why Metarank?
 
-<br>
+We’re not the first ones thinking about how to solve this problem, there are several similar solutions in the market:
 
-#### Heading 4 
+* ElasticSearch-LTR plugin. This plugin has a much narrower scope: _feature management_, _backtesting_ and _training_ phases should be implemented separately, which is really complicated. ES-LTR only serves XGBoost models inside ElasticSearch and supports some basic product-based feature extraction.
+* prediction.io can also solve the same problem, but:
+  * Abandoned after SalesForce acquisition.
+  * Requires HDFS and a ton of pre-installed infrastructure to operate.
+  * Not focused on ranking, so still requires a lot of manual work to operate.
 
-<br>
+Metarank feature store also looks similar to some existing generic feature stores like Feast or Hopsworks, but is less generic. 
 
-##### Heading 5 
+In theory, if a company has a strong team of data scientists, software and devops engineers, it can glue a similar system together in quite a short period of time (around 3-6 months). However, usually such existing teams do not have enough experience with ranking problems, and the first version of the system can be a complete failure (a quote from Airbnb LTR article), requiring a redesign and major refactoring.
 
-<br>
+The teams that build yet another LTR system usually face the same problems:
 
-###### Heading 6
+* Feature storage for both online and offline evaluations is tricky to design and implement. Existing ones are operationally complex as they are too generic.
+* Backtesting new models requires a lot of hand-written code to glue existing libraries together.
+* Existing ML systems are not really focused on ranking problems and have weak integrations with existing LTR libraries.
 
+Metarank should solve these problems by being a very narrowly scoped and a bit opinionated system, mostly focused on non-LTR-experts:
 
-<hr>
+* Easy to test and deploy.
+* Documented and plain API for raw clickthrough ingestion with strict event schema.
+* DB-agnostic feature store.
+* API for online ranking.
 
-##### Emphasis
+## Who should take a look at Metarank?
 
-Emphasis, aka italics, with *asterisks* or _underscores_.
-
-Strong emphasis, aka bold, with **asterisks** or __underscores__.
-
-Combined emphasis with **asterisks and _underscores_**.
-
-Strikethrough uses two tildes. ~~Scratch this.~~
-
-<hr>
-
-##### Link
-[I'm an inline-style link](https://www.google.com)
-
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
-
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
-
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
-
-[You can use numbers for reference-style link definitions][1]
-
-Or leave it empty and use the [link text itself].
-
-URLs and URLs in angle brackets will automatically get turned into links. 
-http://www.example.com or <http://www.example.com> and sometimes 
-example.com (but not on Github, for example).
-
-Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.themefisher.com
-[1]: https://gethugothemes.com
-[link text itself]: https://www.getjekyllthemes.com
-
-<hr>
-
-##### Paragraph
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus, facilis placeat pariatur! Voluptatem, sed harum pariatur adipisci voluptates voluptatum cumque, porro sint minima similique magni perferendis fuga! Optio vel ipsum excepturi tempore reiciendis id quidem? Vel in, doloribus debitis nesciunt fugit sequi magnam accusantium modi neque quis, vitae velit, pariatur harum autem a! Velit impedit atque maiores animi possimus asperiores natus repellendus excepturi sint architecto eligendi non, omnis nihil. Facilis, doloremque illum. Fugit optio laborum minus debitis natus illo perspiciatis corporis voluptatum rerum laboriosam.
-
-<hr>
-
-##### Ordered List
-
-1. List item
-2. List item
-3. List item
-4. List item
-5. List item
-
-<hr>
-
-##### Unordered List
-
-* List item
-* List item
-* List item
-* List item
-* List item
-
-<hr>
-
-##### Code and Syntax Highlighting
-
-Inline `code` has `back-ticks around` it.
-
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
- 
-```python
-s = "Python syntax highlighting"
-print s
-```
-
-<hr>
-
-##### Blockquote
-
-> This is a blockquote example.
-
-<hr>
-
-##### Inline HTML
-
-You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
-
-<dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
-
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-</dl>
-
-
-<hr>
-
-##### Tables
-
-Colons can be used to align columns.
-
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
-There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don't need to make the 
-raw Markdown line up prettily. You can also use inline Markdown.
-
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
-
-<hr>
-
-##### Image
-
-![image](../../images/blog/post-6.jpg)
-
-<hr>
-
-##### Youtube video
-
-{{< youtube C0DPdy98e4c >}}
+Metarank is mostly focused on medium and large companies having their own discovery teams that work on ranking and recommendations. Metarank should help discovery teams in simplifying their LTR stack for data collection, backtesting and model serving. As an open source project, it can also become an umbrella project to combine contributions from different companies in the area of ranking.
