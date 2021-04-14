@@ -27,13 +27,13 @@ Companies that have such systems already have the building blocks, but they are 
 
 We’re not the first ones thinking about how to solve this problem, there are several similar solutions in the market:
 
-* ElasticSearch-LTR plugin. This plugin has a much narrower scope: _feature management_, _backtesting_ and _training_ phases should be implemented separately, which is really complicated. ES-LTR only serves XGBoost models inside ElasticSearch and supports some basic product-based feature extraction.
-* prediction.io can also solve the same problem, but:
-  * Abandoned after SalesForce acquisition.
-  * Requires HDFS and a ton of pre-installed infrastructure to operate.
-  * Not focused on ranking, so still requires a lot of manual work to operate.
+* [ElasticSearch-LTR plugin](https://github.com/o19s/elasticsearch-learning-to-rank) which has a much narrower scope: **_feature management_**, **_backtesting_** and **_training_** phases must be implemented separately, which is really complicated. ES-LTR only serves XGBoost models inside ElasticSearch and supports some basic product-based feature extraction.
+* [prediction.io](https://predictionio.apache.org/) can also solve the same problem, but:
+  * **Abandoned** after SalesForce acquisition
+  * **Requires HDFS** and a ton of pre-installed infrastructure to operate
+  * **Not focused on ranking**, so still requires a lot of manual work to operate
 
-Metarank feature store also looks similar to some existing generic feature stores like Feast or Hopsworks, but is less generic. 
+Metarank feature store also looks similar to some existing generic feature stores like [Feast](https://feast.dev/) or [Hopsworks](https://www.logicalclocks.com/), but is less generic. 
 
 In theory, if a company has a strong team of data scientists, software and devops engineers, it can glue a similar system together in quite a short period of time (around 3-6 months). However, usually such existing teams do not have enough experience with ranking problems, and the first version of the system can be a complete failure (a quote from Airbnb LTR article), requiring a redesign and major refactoring.
 
@@ -45,11 +45,22 @@ The teams that build yet another LTR system usually face the same problems:
 
 Metarank should solve these problems by being a very narrowly scoped and a bit opinionated system, mostly focused on non-LTR-experts:
 
-* Easy to test and deploy.
-* Documented and plain API for raw clickthrough ingestion with strict event schema.
-* DB-agnostic feature store.
-* API for online ranking.
+* **Easy** to test and deploy.
+* **Documented** and plain API for raw clickthrough ingestion with strict event schema
+* **DB-agnostic** feature store
+* **API** for online ranking
 
 ## Who should take a look at Metarank?
 
-Metarank is mostly focused on medium and large companies having their own discovery teams that work on ranking and recommendations. Metarank should help discovery teams in simplifying their LTR stack for data collection, backtesting and model serving. As an open source project, it can also become an umbrella project to combine contributions from different companies in the area of ranking.
+Metarank is mostly focused on medium and large companies having their own discovery teams that work on ranking and recommendations. Metarank will help discovery teams in simplifying their LTR stack for **data collection**, **backtesting** and **model serving**. As an open source project, it can also become an umbrella project to combine contributions from different companies in the area of ranking.
+
+## Current state
+
+We are actively working to bring an MVP of Metarank to life and have the following features stated for the first release in our [Roadmap](https://github.com/metarank/metarank#roadmap):
+
+* Ingestion event schema and API: **json-only**
+* **Static** schema definition in config file.
+* **Storage** interface: **RocksDB** implementation
+* Feature interface: **scoping** and **windowing** support
+
+Feel free to take active part in development of Metarank by submitting an issue on our [Github](https://github.com/metarank/metarank)!
